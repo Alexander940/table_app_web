@@ -157,21 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('mousemove', handleMouseMove);
 
-    function updateCellStyle(cell) {
-        const cardsInCell = Array.from(cell.children);
-        const allCorrect = cardsInCell.every(card => correctPositions[card.textContent] === cell.id);
-
-        if (cardsInCell.length === 0) {
-            cell.classList.remove('correct', 'incorrect');
-        } else if (allCorrect) {
-            cell.classList.add('correct');
-            cell.classList.remove('incorrect');
-        } else {
-            cell.classList.add('incorrect');
-            cell.classList.remove('correct');
-        }
-    }
-
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
         card.addEventListener('dragstart', (event) => {

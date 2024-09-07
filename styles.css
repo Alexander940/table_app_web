@@ -1,0 +1,89 @@
+/* Aplica la fuente Poppins a todo el texto */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el encabezado principal */
+#main-header {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilos para el subtítulo */
+#subtitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    position: relative;
+}
+
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    vertical-align: middle;     /* Centra verticalmente el contenido */
+}
+
+
+.correct {
+    background-color: #00A95C;
+}
+
+.incorrect {
+    background-color: #ff3333;
+}
+
+/* Estilos para las cards */
+.card {
+    width: 100px;               /* Mantiene el ancho fijo */
+    background-color: #8EB2FF;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    word-wrap: break-word;
+    white-space: normal;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto;             /* Centra horizontalmente la card dentro de su celda */
+    border-radius: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards se envuelvan hacia abajo */
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto; /* Cambia la altura a auto para que crezca con el contenido */
+    max-width: 100%; /* Asegura que no se expanda más allá del ancho de la pantalla */
+    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+    background-color: white;
+    background-color: white !important;
+    margin-bottom: 20px;
+}
+
+.cards-container > div {
+    margin: 10px;
+}

@@ -4,68 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electron Table App</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th {
-            border: 1px solid black;
-            text-align: center;
-            height: 50px;
-            width: 100px;
-            font-size: 18px;
-            position: relative;
-        }
-        td {
-            border: 1px solid black;
-            text-align: center;
-            padding: 10px;
-            font-size: 18px;
-            width: 100px;  /* Establece un ancho fijo para las celdas */
-            height: 100px; /* Establece una altura fija para las celdas */
-            box-sizing: border-box; /* Incluye padding y border en el tamaño total */
-            position: relative;        
-        }
-        .correct {
-            background-color: green;
-        }
-        .incorrect {
-            background-color: red;
-        }
-        .card {
-            width: 100px;
-            height: 50px;
-            background-color: lightblue;
-            border: 1px solid black;
-            margin: 5px;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-            font-size: 13px;
-        }
-        .cards-container {
-            display: flex;
-                flex-wrap: wrap; /* Permite que las cards se envuelvan hacia abajo */
-            justify-content: center;
-            margin-top: 20px;
-            width: 100%;
-            height: auto; /* Cambia la altura a auto para que crezca con el contenido */
-            max-width: 100%; /* Asegura que no se expanda más allá del ancho de la pantalla */
-            overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
-            background-color: white;
-            background-color: white !important;
-        }
-    </style>
+    
+    <!-- Enlace a Google Fonts para Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1 id="main-header">Procesos del PMBOK</h1>
+    <h2 id="subtitle">Arrastra los elementos a su posición correcta</h2>
+
     <div id="cards-container" class="cards-container">
         <!-- Agrega más cards según sea necesario -->
     </div>
     <table id="main-table">
         <!-- Aquí se generarán las filas y celdas dinámicamente -->
-    </table><div>
-    </div>
+    </table>
     
     <script src="js/renderer.js"></script>
 </body>
