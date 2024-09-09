@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'Desarrollar el acta de constitución del proyecto': '0-0',
         'Desarrollar el Plan para la Dirección del Proyecto': '0-1',
         'Dirigir y gestionar el trabajo del proyecto': '0-2',
+        'Gestionar el conocimiento del proyecto': '0-2',
         'Monitorear y controlar el trabajo del proyecto': '0-3',
+        'Realizar el control integrado de cambios': '0-3',
         'Cerrar el proyecto o fase': '0-4',
 
         'Planificar la gestión del alcance': '1-1',
