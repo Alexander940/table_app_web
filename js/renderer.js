@@ -109,8 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const img = document.createElement('img');
     img.src = 'icon/logo-icesi-azul.png'; // Cambia esta ruta por la de tu imagen
     img.alt = 'ICESI logo';
-    img.style.width = '60%'; // Ajusta el tamaño de la imagen según tus necesidades
-    img.style.height = '90%'; // Ajusta el tamaño de la imagen según tus necesidades
     emptyHeader.appendChild(img);
 
     headerRow.appendChild(emptyHeader);
@@ -147,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (!cell.contains(card)) {
                     cell.appendChild(card);
+                    adjustCardFontSize(card, cell);
                 }
 
                 updateCellColor(cell);
@@ -204,5 +203,20 @@ document.addEventListener('DOMContentLoaded', () => {
             cell.classList.add('incorrect');
             cell.classList.remove('correct');
         }
+    }
+
+    function adjustCardFontSize(card, cell) {
+        const cellWidth = cell.clientWidth;
+        const cellHeight = cell.clientHeight;
+
+        let fontSize = 0.7;
+
+        const windowWidth = window.innerWidth;
+
+        if (windowWidth < 1024) {
+            fontSize = 0.8;
+        }
+
+        card.style.fontSize = `${fontSize}em`;
     }
 });
