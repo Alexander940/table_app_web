@@ -8,7 +8,8 @@ body {
     text-align: center;
     font-size: 36px;
     margin-top: 20px;
-    color: #333;
+    color: #FFF;
+    background-color: #8EB2FF;
 }
 
 /* Estilos para el subtítulo */
@@ -16,7 +17,7 @@ body {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-    color: #555;
+    color: #000;
 }
 
 table {
@@ -31,6 +32,7 @@ th {
     width: 100px;
     font-size: 18px;
     position: relative;
+    color: #8EB2FF;
 }
 
 
@@ -47,27 +49,33 @@ td {
 
 
 .correct {
-    background-color: #00A95C;
+    background-color: #00F401;
 }
 
 .incorrect {
-    background-color: #ff3333;
+    background-color: #F40100;
 }
 
 /* Estilos para las cards */
-.card {
-    width: 100px;               /* Mantiene el ancho fijo */
-    background-color: #8EB2FF;
+.card {               /* Mantiene el ancho fijo */
+    width: 100px;
+    background-color: whitesmoke;
     border: 1px solid black;
     padding: 5px;
     text-align: center;
     font-size: 12px;
+    font-weight: medium;
     word-wrap: break-word;
     white-space: normal;
     height: auto;
     box-sizing: border-box;
     margin: 0 auto;             /* Centra horizontalmente la card dentro de su celda */
     border-radius: 10px;
+    color: #5466FF;
+
+    display: flex;              /* Convierte el contenedor en un flex container */
+    justify-content: center;        /* Centra verticalmente el contenido */
+    align-items: center;            /* Centra horizontalmente el contenido */
 }
 
 .cards-container {
@@ -86,4 +94,5 @@ td {
 
 .cards-container > div {
     margin: 10px;
+    width: 10%;
 }

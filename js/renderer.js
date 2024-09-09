@@ -104,6 +104,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Crear los encabezados de columna
     const headerRow = document.createElement('tr');
     const emptyHeader = document.createElement('th'); // Celda vacía para la esquina superior izquierda
+
+    // Añadir la imagen en la celda vacía
+    const img = document.createElement('img');
+    img.src = 'icon/logo-icesi-azul.png'; // Cambia esta ruta por la de tu imagen
+    img.alt = 'ICESI logo';
+    img.style.width = '60%'; // Ajusta el tamaño de la imagen según tus necesidades
+    img.style.height = '90%'; // Ajusta el tamaño de la imagen según tus necesidades
+    emptyHeader.appendChild(img);
+
+    headerRow.appendChild(emptyHeader);
+
     headerRow.appendChild(emptyHeader);
     for (let j = 0; j < 5; j++) {
         const header = document.createElement('th');
